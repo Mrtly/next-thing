@@ -1,8 +1,10 @@
 import { ChangeEvent } from 'react';
 import { useState } from 'react';
 
-function FaffInput(props: { id: string;
-  onValueChange?: (newType: string) => void; }) {
+function FaffInput(props: { 
+  id: string;
+  label: string;
+  onValueChange?: (newValue: string) => void; }) {
     const [name, setName] = useState('Mrtl');
   
     function handleChange(event: ChangeEvent<HTMLInputElement>) {
@@ -13,7 +15,7 @@ function FaffInput(props: { id: string;
     return (
       <div>
         <label htmlFor={props.id}>
-          <span className="font-semibold text-slate-900">label for {props.id} </span> 
+          <span className="font-semibold text-slate-900"> {props.label} </span> 
           <input
             id={props.id}
             name={props.id}
