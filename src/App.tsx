@@ -1,7 +1,7 @@
 import Logo from './components/logo';
 import Divider from './components/divider';
-import FaffInput from './components/faffInput';
-import Box from './components/box'
+import Textinput from './components/textinput';
+import Button from './components/button'
 import Checkbox from './components/checkbox'
 import LearningList from './components/learningList'
 import { Link, Route, Routes } from 'react-router-dom'
@@ -13,12 +13,12 @@ function App() {
       <Logo /> <span className='font-mono font-semibold ml-3'>Playground</span> 
     </div>
     <div className="flex font-mono">
-      <nav className="w-40 shadow-md border-r border-slate-300">
+      <nav className="w-48 shadow-md border-r border-slate-300">
         <ul className='flex flex-col'>
-        <li><Link to="/" className="py-3 px-4 border-b w-full block">All</Link></li>
-        <li> <Link to="/form" className="py-3 px-4 border-b w-full block">Input</Link></li>
-        <li><Link to="/box" className="py-3 px-4 border-b w-full block">Box</Link></li>
-        <li><Link to="/checkbox" className="py-3 px-4 border-b w-full block">Checkbox</Link></li>
+        <li><Link to="/" className="py-3 px-6 border-b w-full block">All</Link></li>
+        <li><Link to="/button" className="py-3 px-6 border-b w-full block">Button</Link></li>
+        <li><Link to="/form" className="py-3 px-6 border-b w-full block">Input</Link></li>
+        <li><Link to="/checkbox" className="py-3 px-6 border-b w-full block">Checkbox</Link></li>
         </ul>
       </nav>
       <div className="w-screen min-h-screen p-10 bg-slate-200 flex flex-col items-center justify-center">
@@ -26,21 +26,21 @@ function App() {
       <Routes>
         <Route path="/" element={
           <div className="">
-            <h1 className="absolute top-20 left-40 font-mono text-xl text-blue-500">
+            <h1 className="absolute top-20 left-48 font-mono text-xl text-blue-500">
               demo of all components
             </h1>
             
             <div>
-              box component with color prop
+              button component with color prop
               <div className="mt-5 flex items-center">
               {['blue', 'purple', 'pink'].map((item,index)=>{
-                return <Box key={index} color={item} className="mx-4"/>
+                return <Button key={index} color={item} className="mx-4"/>
               })}
             </div>
 
             <Divider/>
             text input component
-            <FaffInput id="input1" label="Name" onValueChange={(e) => console.log(e)}/>
+            <Textinput id="input1" label="Name" onValueChange={(e) => console.log(e)}/>
             
 
             <Divider/>
@@ -53,8 +53,8 @@ function App() {
             
             </div>
           </div>}/>
-        <Route path="/form" element={<FaffInput id="input1" label="Name" />}/>
-        <Route path="/box" element={<Box color="blue"/>}/>
+        <Route path="/form" element={<Textinput id="input1" label="Name" />}/>
+        <Route path="/button" element={<Button color="blue"/>}/>
         <Route path="/checkbox" element={<Checkbox id="checkbox1" label="thing"/>}/>
       </Routes>
       </div>

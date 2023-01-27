@@ -1,7 +1,7 @@
 import { ChangeEvent } from 'react';
 import { useState } from 'react';
 
-function FaffInput(props: { 
+function Textinput(props: { 
   id: string;
   label: string;
   onValueChange?: (newValue: string) => void; }) {
@@ -31,4 +31,4 @@ function FaffInput(props: {
   }
   
 
-export default FaffInput;
+export default Textinput;
