@@ -5,9 +5,9 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   safelist: [
-    'bg-blue-500',
-    'bg-purple-500',
-    'bg-pink-500',
+    'bg-blue-500', 'border-blue-800',
+    'bg-purple-500', 'border-purple-800',
+    'bg-pink-500', 'border-pink-800',
   ],
   theme: {
     extend: {

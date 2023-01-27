@@ -1,5 +1,5 @@
-React faff 
+React Playground
 
 on Vite, with TS & Tailwind 
 
-on [tryreact-ts.vercel.app](https://tryreact-ts.vercel.app/)
+on [faff.vercel.app](https://faff.vercel.app/)
