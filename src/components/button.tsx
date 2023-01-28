@@ -1,4 +1,7 @@
-type ButtonProps = { color: string, className?: string }
+type ButtonProps = { 
+  color: string, 
+  className?: string,
+  displayText?: string }
 
 export default function Box(props: ButtonProps) {
 
@@ -8,7 +11,7 @@ export default function Box(props: ButtonProps) {
 
   return <button
     onClick={handleClick}
-    className={`h-11 min-w-[80px] px-4 flex items-center justify-center rounded shadow hover:shadow-lg bg-${props.color}-700 active:bg-slate-800 text-slate-100 ${props.className}`}>
-      {props.color}
+    className={`h-10 min-w-[80px] px-6 flex items-center justify-center rounded-full shadow hover:shadow-lg bg-${props.color} active:bg-slate-700 active:scale-[.95] transition-all duration-150 text-slate-100 ${props.className}`}>
+      {props.displayText || props.color}
     </button>
 }

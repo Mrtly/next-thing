@@ -5,21 +5,31 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   safelist: [
-    'bg-blue-700',
-    'bg-purple-700',
-    'bg-pink-700'
+    'bg-pine', 'bg-moss', 'bg-grass', 
+    'bg-matcha', 'bg-lavender', 'bg-goldleaf',
+    'bg-bark'
   ],
   theme: {
     extend: {
-        keyframes: {
-          wiggle: {
-            '0%': { transform: 'rotate(0deg)' },
-            '100%': { transform: 'rotate(360deg)' },
-          }
-        },
-        animation: {
-          'wiggle': 'spin 10s linear infinite',
+      colors: {
+        pine: '#1F3A33',
+        moss: '#016341',
+        grass: '#07A761',
+        goldleaf: '#D2A04A',
+        lavender: '#96B2E1',
+        matcha: '#D4E9E1',
+        dull: '#EDEBE9',
+        bark: '#1C1E1D'
+      },
+      keyframes: {
+        wiggle: {
+          '0%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(360deg)' },
         }
+      },
+      animation: {
+        'wiggle': 'spin 10s linear infinite',
+      }
     },
   },
   plugins: [],

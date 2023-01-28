@@ -6,11 +6,12 @@ type NavLinkProps = {
 }
 
 export default function SideNavLink(props: NavLinkProps) {
+  
   return (
     <NavLink to={props.to} 
       className={({ isActive }) => [
-        "p-3 border-b w-full block",
-        isActive ? "text-indigo-600 font-semibold" : "text-slate-500 hover:underline"
+        "px-1 lg:px-3 py-2 border-b border-matcha block",
+        isActive ? "text-moss font-semibold" : "text-pine hover:underline"
       ].join(" ")
     }>
       {props.displayText}
