@@ -7,8 +7,9 @@ export default function LearningList() {
     { label: 'local state', done: true },
     { label: 'component props, types, default values', done: true },
     { label: 'emitting to parent components', done: true },
+    { label: 'slots (children)', done: true },
+    { label: 'reuseable layouts' },
     { label: 'conditional rendering' },
-    { label: 'layouts and slots (children)' },
     { label: 'hooks' },
     { label: 'lifecycle methods' },
     { label: 'global state w Redux' }
@@ -17,13 +18,10 @@ export default function LearningList() {
   return <div>
     <div>learning list</div> 
     <div className="text-sm text-slate-500">(things that are done a little differently in Vue)</div>
-    
     <div className="mt-3">
-    {learningListItems.map((item,index)=>{
-      return <Checkbox key={index} id={index.toString()} label={item.label} value={item.done} />
-    })}
+      {learningListItems.map((item,index)=>{
+        return <Checkbox key={index} id={index.toString()} label={item.label} value={item.done} />
+      })}
     </div> 
-    
   </div>
-
 }

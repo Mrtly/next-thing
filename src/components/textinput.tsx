@@ -30,5 +30,4 @@ function Textinput(props: {
     );
   }
   
-
 export default Textinput;
