@@ -3,7 +3,7 @@ type ButtonProps = {
   className?: string,
   displayText?: string }
 
-export default function Box(props: ButtonProps) {
+export default function Button(props: ButtonProps) {
 
   const handleClick = () => {
     console.log(props.color)

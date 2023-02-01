@@ -8,8 +8,8 @@ export default function LearningList() {
     { label: 'component props, types, default values', done: true },
     { label: 'emitting to parent components', done: true },
     { label: 'slots (children)', done: true },
-    { label: 'reuseable layouts' },
-    { label: 'conditional rendering' },
+    { label: 'conditional rendering', done: true },
+    { label: 'computed' },
     { label: 'hooks' },
     { label: 'lifecycle methods' },
     { label: 'global state w Redux' }
