@@ -4,6 +4,7 @@ import Button from './components/button'
 import Checkbox from './components/checkbox'
 import Card from './components/card'
 import SideNav from './components/sideNav';
+import Modal from './components/modal';
 import AllTheThings from './components/allTheThings';
 import { Route, Routes } from 'react-router-dom'
 
@@ -21,6 +22,7 @@ export default function App() {
             <Route path="/button" element={<Button color="moss"/>}/>
             <Route path="/checkbox" element={<Checkbox id="checkbox1" label="thing"/>}/>
             <Route path="/card" element={<Card children={<div>a card</div>} />}/>
+            <Route path="/modal" element={<Modal visible={true} />}/>
           </Routes>
         </div>
       </div>

@@ -10,6 +10,7 @@ export default function SideNav() {
         <li><SideNavLink to="/form" displayText="TextInput"/></li>
         <li><SideNavLink to="/checkbox" displayText="CheckBox"/></li>
         <li><SideNavLink to="/card" displayText="Card"/></li>
+        <li><SideNavLink to="/modal" displayText="Modal"/></li>
       </ul>      
     </nav>
   );
