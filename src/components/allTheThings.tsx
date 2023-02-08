@@ -1,20 +1,27 @@
+import { useState } from 'react';
 import Divider from './divider';
 import Textinput from './textinput';
 import Button from './button'
 import Checkbox from './checkbox'
-import LearningList from './learningList'
+import Tooltip from './tooltip'
 import Card from './card'
 
 export default function AllTheThings() {
+
+  const [showModal, setShowModal] = useState(false)
+  const toggleModal = () => {
+    setShowModal(true)
+  }
+
   return <div>
-    <h1 className="font-mono text-sm text-slate-600">
+    <h1 className="font-ubuntu text-sm text-slate-600">
     demo of all components
     </h1>
   
     <div className="mt-5">
       button component with color prop
       <div className="mt-5 flex flex-wrap lg:flex-nowrap gap-2 lg:gap-4 items-center">
-      {['moss', 'pine', 'bark', 'lavender', 'goldleaf'].map((item,index)=>{
+      {['wine', 'moss', 'pine', 'bark', 'lavender', 'goldleaf'].map((item,index)=>{
         return <Button key={index} color={item} className=""/>
       })}
     </div>
@@ -32,7 +39,10 @@ export default function AllTheThings() {
     <Card children={<div>some content in the card</div>} />
 
     <Divider/>
-    <LearningList />
+    tooltip:
+    <Tooltip displayText="what is this?" tooltipText="tooltip example revealed!" />
+    
+    <Divider/>
     </div>
   </div>
 }

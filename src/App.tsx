@@ -5,6 +5,7 @@ import Checkbox from './components/checkbox'
 import Card from './components/card'
 import SideNav from './components/sideNav';
 import Modal from './components/modal';
+import Tooltip from './components/tooltip';
 import AllTheThings from './components/allTheThings';
 import { Route, Routes } from 'react-router-dom'
 
@@ -13,7 +14,7 @@ export default function App() {
   return (
     <>
       <TopNav/>
-      <div className="flex font-mono">
+      <div className="flex font-ubuntu">
         <SideNav/>
         <div className="w-full min-w-screen min-h-screen p-10 bg-matcha flex flex-col items-center justify-center">
           <Routes>
@@ -23,6 +24,7 @@ export default function App() {
             <Route path="/checkbox" element={<Checkbox id="checkbox1" label="thing"/>}/>
             <Route path="/card" element={<Card children={<div>a card</div>} />}/>
             <Route path="/modal" element={<Modal visible={true} />}/>
+            <Route path="/tooltip" element={<Tooltip displayText="what is this?" tooltipText="tooltip example revealed!" />}/>
           </Routes>
         </div>
       </div>

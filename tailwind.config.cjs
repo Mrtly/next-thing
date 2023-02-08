@@ -11,6 +11,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        ubuntu: 'Ubuntu'
+      },
       colors: {
         pine: '#1F3A33',
         moss: '#016341',
@@ -19,7 +22,8 @@ module.exports = {
         lavender: '#96B2E1',
         matcha: '#D4E9E1',
         dull: '#EDEBE9',
-        bark: '#1C1E1D'
+        bark: '#1C1E1D',
+        wine: '#800E13'
       },
       keyframes: {
         wiggle: {
