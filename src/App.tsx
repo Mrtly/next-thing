@@ -7,6 +7,7 @@ import SideNav from './components/sideNav';
 import Modal from './components/modal';
 import Tooltip from './components/tooltip';
 import AllTheThings from './components/allTheThings';
+import D3Samples from './components/d3Samples'
 import { Route, Routes } from 'react-router-dom'
 
 export default function App() {
@@ -25,6 +26,7 @@ export default function App() {
             <Route path="/card" element={<Card children={<div>a card</div>} />}/>
             <Route path="/modal" element={<Modal visible={true} />}/>
             <Route path="/tooltip" element={<Tooltip displayText="what is this?" tooltipText="tooltip example revealed!" />}/>
+            <Route path="/d3-samples" element={<D3Samples />}/>
           </Routes>
         </div>
       </div>

@@ -1,13 +1,19 @@
 import Logo from './logo';
+import { NavLink } from 'react-router-dom'
 
 export default function TopNav() {
   
   return (
     <div className='h-20 px-4 flex items-center bg-pine shadow-lg text-white'> 
-      <Logo /> 
-      <span className='font-ubuntu font-semibold text-xl ml-3'>
-        Playground
-      </span> 
+      
+      <NavLink to="/">
+        <div className="flex items-center">
+          <Logo /> 
+          <span className='font-ubuntu font-semibold text-xl ml-3'>
+            Playground
+          </span> 
+        </div>
+      </NavLink>
     </div>
   );
 }
