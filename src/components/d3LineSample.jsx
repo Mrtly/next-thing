@@ -14,7 +14,7 @@ export default function D3Line() {
     const svg = d3.select(svgRef.current)
       .attr('width', w)
       .attr('height', h)
-      .attr('class', 'bg-goldleaf overflow-visible');
+      .attr('class', 'bg-grass bg-opacity-25 overflow-visible');
 
     //scaling
     const xScale = d3.scaleLinear()
