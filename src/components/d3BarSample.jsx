@@ -65,7 +65,7 @@ export default function D3Bar() {
   return (
     <Card>
       <div className="px-8 py-4">
-        <div className="mb-5">D3 bar chart</div>
+        <div className="mb-5">D3 bar chart with random data</div>
         <svg ref={svgRef}>
           <g className="x-axis"/>
           <g className="y-axis"/>

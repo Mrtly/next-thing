@@ -14,7 +14,7 @@ export default function D3Line() {
     const svg = d3.select(svgRef.current)
       .attr('width', w)
       .attr('height', h)
-      .attr('class', 'bg-grass bg-opacity-25 overflow-visible');
+      .attr('class', 'bg-lavender bg-opacity-50 overflow-visible');
 
     //scaling
     const xScale = d3.scaleLinear()
@@ -61,7 +61,7 @@ export default function D3Line() {
   return (
     <Card>
       <div className="px-8 py-4">
-        <div className="mb-5">D3 line chart</div>
+        <div className="mb-5">D3 line chart with random data</div>
         <svg ref={svgRef}></svg>
       </div>
     </Card>

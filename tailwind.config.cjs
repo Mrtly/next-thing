@@ -23,7 +23,8 @@ module.exports = {
         matcha: '#D4E9E1',
         dull: '#EDEBE9',
         bark: '#1C1E1D',
-        wine: '#800E13'
+        wine: '#800E13',
+        berry: "#c1121f"
       },
       keyframes: {
         wiggle: {
