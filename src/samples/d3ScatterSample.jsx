@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from 'react'
 import * as d3 from 'd3'
-import Card from './card'
+import Card from '../components/card'
 
 export default function D3Scatter() {
   const source = "https://raw.githubusercontent.com/freeCodeCamp/ProjectReferenceData/master/cyclist-data.json"

@@ -8,12 +8,12 @@ export default function SideNav() {
       <div className="font-medium text-moss my-4">Components</div>
       <ul>
         <li><SideNavLink to="/" displayText="All"/></li>
-        <li><SideNavLink to="/button" displayText="Button"/></li>
-        <li><SideNavLink to="/form" displayText="TextInput"/></li>
-        <li><SideNavLink to="/checkbox" displayText="CheckBox"/></li>
-        <li><SideNavLink to="/card" displayText="Card"/></li>
-        <li><SideNavLink to="/modal" displayText="Modal"/></li>
-        <li><SideNavLink to="/tooltip" displayText="Tooltip"/></li>
+        <li><SideNavLink to="/components/button" displayText="Button"/></li>
+        <li><SideNavLink to="/components/form" displayText="TextInput"/></li>
+        <li><SideNavLink to="/components/checkbox" displayText="CheckBox"/></li>
+        <li><SideNavLink to="/components/card" displayText="Card"/></li>
+        <li><SideNavLink to="/components/modal" displayText="Modal"/></li>
+        <li><SideNavLink to="/components/tooltip" displayText="Tooltip"/></li>
       </ul>  
       <Divider/>
       <div className="font-medium text-moss my-4">D3 Samples</div>

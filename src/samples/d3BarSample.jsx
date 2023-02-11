@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from 'react'
 import * as d3 from 'd3'
-import Card from './card'
-import Button from './button';
+import Card from '../components/card'
+import Button from '../components/button';
 
 export default function D3Bar() {
   

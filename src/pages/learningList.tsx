@@ -1,4 +1,4 @@
-import Checkbox from './checkbox'
+import Checkbox from '../components/checkbox'
 
 export default function LearningList() {
 

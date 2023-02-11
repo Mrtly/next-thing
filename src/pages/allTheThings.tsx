@@ -1,10 +1,10 @@
 import { useState } from 'react';
-import Divider from './divider';
-import Textinput from './textinput';
-import Button from './button'
-import Checkbox from './checkbox'
-import Tooltip from './tooltip'
-import Card from './card'
+import Divider from '../components/divider';
+import Textinput from '../components/textinput';
+import Button from '../components/button'
+import Checkbox from '../components/checkbox'
+import Tooltip from '../components/tooltip'
+import Card from '../components/card'
 
 export default function AllTheThings() {
 

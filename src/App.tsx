@@ -6,10 +6,10 @@ import Card from './components/card'
 import SideNav from './components/sideNav';
 import Modal from './components/modal';
 import Tooltip from './components/tooltip';
-import AllTheThings from './components/allTheThings';
-import D3Bar from './components/d3BarSample';
-import D3Line from './components/d3LineSample';
-import D3Scatter from './components/d3ScatterSample';
+import AllTheThings from './pages/allTheThings';
+import D3Bar from './samples/d3BarSample';
+import D3Line from './samples/d3LineSample';
+import D3Scatter from './samples/d3ScatterSample';
 
 import { Route, Routes } from 'react-router-dom'
 
