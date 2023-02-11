@@ -4,7 +4,7 @@ import SideNavLink from './sideNavLink';
 export default function SideNav() {
   
   return (
-    <nav className="shadow-md border-r border-slate-300 px-1 lg:px-4">
+    <nav className="shadow-md border-r border-slate-300 px-2 lg:px-6">
       <div className="font-medium text-moss my-4">Components</div>
       <ul>
         <li><SideNavLink to="/" displayText="All"/></li>
@@ -16,9 +16,11 @@ export default function SideNav() {
         <li><SideNavLink to="/tooltip" displayText="Tooltip"/></li>
       </ul>  
       <Divider/>
-      <div className="font-medium text-moss my-4">Samples</div>
+      <div className="font-medium text-moss my-4">D3 Samples</div>
       <ul>
-        <li><SideNavLink to="/d3-samples" displayText="D3 Samples"/></li>
+        <li><SideNavLink to="/d3-samples/bar" displayText="Bar"/></li>
+        <li><SideNavLink to="/d3-samples/line" displayText="Line"/></li>
+        <li><SideNavLink to="/d3-samples/scatter" displayText="Scatter"/></li>
       </ul>    
     </nav>
   );

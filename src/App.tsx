@@ -7,7 +7,10 @@ import SideNav from './components/sideNav';
 import Modal from './components/modal';
 import Tooltip from './components/tooltip';
 import AllTheThings from './components/allTheThings';
-import D3Samples from './components/d3Samples'
+import D3Bar from './components/d3BarSample';
+import D3Line from './components/d3LineSample';
+import D3Scatter from './components/d3ScatterSample';
+
 import { Route, Routes } from 'react-router-dom'
 
 export default function App() {
@@ -26,7 +29,9 @@ export default function App() {
             <Route path="/card" element={<Card children={<div>a card</div>} />}/>
             <Route path="/modal" element={<Modal visible={true} />}/>
             <Route path="/tooltip" element={<Tooltip displayText="what is this?" tooltipText="tooltip example revealed!" />}/>
-            <Route path="/d3-samples" element={<D3Samples />}/>
+            <Route path="/d3-samples/bar" element={<D3Bar />}/>
+            <Route path="/d3-samples/line" element={<D3Line />}/>
+            <Route path="/d3-samples/scatter" element={<D3Scatter />}/>
           </Routes>
         </div>
       </div>

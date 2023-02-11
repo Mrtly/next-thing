@@ -42,9 +42,9 @@ export default function D3Bar() {
       .call(xAxis)
       .attr("class", "font-ubuntu text-md text-moss");
 
-    const yAxis = d3.axisRight(yScale);
+    const yAxis = d3.axisLeft(yScale);
     svg.select(".y-axis")
-      .style('transform', `translateX(${w-padding}px)`)
+      .style('transform', `translateX(${padding}px)`)
       .call(yAxis)
       .attr("class", "font-ubuntu text-md text-goldleaf");
 
@@ -72,9 +72,9 @@ export default function D3Bar() {
         </svg>
         <br/>
         <div className="flex items-center justify-around">
-            <Button color="pine" onClick={ () => setData(dataSet.map( value => value+ 5))}> Increase </Button>
-            <Button onClick={() => setData(randomData)}> Random </Button>
-            <Button color="wine" onClick={() => setData(initialData.map(value => value ))}> Reset </Button>
+            <Button small color="pine" onClick={ () => setData(dataSet.map( value => value+ 5))}> Increase </Button>
+            <Button small onClick={() => setData(randomData)}> Random </Button>
+            <Button small color="wine" onClick={() => setData(initialData.map(value => value ))}> Reset </Button>
         </div>
       </div>
     </Card>
