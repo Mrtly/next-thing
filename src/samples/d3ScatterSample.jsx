@@ -9,16 +9,12 @@ export default function D3Scatter() {
   const svgRef = useRef()
   const tooltipRef = useRef()
 
-  fetch(source)
-    .then((response) => response.json())
-    .then((data) => setData(data));
-
   let xScale, yScale;
   const width = 600
   const height = 400
   const padding = 40
 
-  useEffect(() => {
+  const drawViz = () => {
     //svg
     const svg = d3.select(svgRef.current)
     const tooltip = d3.select(tooltipRef.current)
@@ -78,20 +74,27 @@ export default function D3Scatter() {
         tooltip.text('')
         .attr('data-year', null)
       })
+  }
+    
+  useEffect(() => {
+    fetch(source)
+      .then((response) => response.json())
+      .then((data) => setData(data));
+  }, []);
 
-  }, [data])
+  drawViz();
 
   return (
     <Card>
       <div className="px-8 py-4 flex flex-col">
         <div className="">D3 scatterplot with competitive cyclist data</div>
-        <div className="mb-2 text-sm font-thin">project idea & sample data from <a target='_blank' href={source} className='underline text-moss'>freeCodeCamp</a></div>
-        <Card id="legend" className="p-2 text-sm font-thin self-end">
+        <Card id="legend" className="mt-2 p-2 text-sm font-thin self-end">
           <span className='text-berry'>Red = Doping Allegation </span> | <span className='text-grass'>Green = No Doping Allegation</span>
         </Card>
         <svg ref={svgRef}/>
         <div ref={tooltipRef} className='h-14 py-2 px-4 bg-lavender bg-opacity-50 text-sm'/>
       </div>
+        <div className="text-sm font-thin">project idea & <a target='_blank' href={source} className='underline text-moss'>sample data</a> from freeCodeCamp</div>
     </Card>
   );
 }

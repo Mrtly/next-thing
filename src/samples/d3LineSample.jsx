@@ -56,7 +56,7 @@ export default function D3Line() {
         .attr('stroke-width', 3)
         .attr('stroke', '#1C1E1D');
 
-  }, [data])
+  }, [])
 
   return (
     <Card>
