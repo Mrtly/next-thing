@@ -10,6 +10,7 @@ import AllTheThings from './pages/allTheThings';
 import D3Bar from './samples/d3BarSample';
 import D3Line from './samples/d3LineSample';
 import D3Scatter from './samples/d3ScatterSample';
+import D3Map from './samples/d3MapSample';
 
 import { Route, Routes } from 'react-router-dom'
 
@@ -31,7 +32,8 @@ export default function App() {
             <Route path="/tooltip" element={<Tooltip displayText="what is this?" tooltipText="tooltip example revealed!" />}/>
             <Route path="/d3-samples/bar" element={<D3Bar />}/>
             <Route path="/d3-samples/line" element={<D3Line />}/>
-            <Route path="/d3-samples/scatter" element={<D3Scatter />}/>
+            <Route path="/d3-samples/scatterplot" element={<D3Scatter />}/>
+            <Route path="/d3-samples/map" element={<D3Map />}/>
           </Routes>
         </div>
       </div>

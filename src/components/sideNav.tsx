@@ -20,7 +20,8 @@ export default function SideNav() {
       <ul>
         <li><SideNavLink to="/d3-samples/bar" displayText="Bar"/></li>
         <li><SideNavLink to="/d3-samples/line" displayText="Line"/></li>
-        <li><SideNavLink to="/d3-samples/scatter" displayText="Scatter"/></li>
+        <li><SideNavLink to="/d3-samples/scatterplot" displayText="Scatterplot"/></li>
+        <li><SideNavLink to="/d3-samples/map" displayText="Map"/></li>
       </ul>    
     </nav>
   );
