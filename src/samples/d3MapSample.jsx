@@ -85,7 +85,7 @@ export default function D3Map() {
           // turn topojson to GEOjson
           let cData = topojson.feature(data, data.objects.counties).features;
           setCountyData(cData)
-          console.log(countyData)
+          // console.log(countyData)
         }
       }
     )
@@ -97,7 +97,7 @@ export default function D3Map() {
       } else {
         let eData = data;
         setEducationData(eData)
-        console.log(educationData)
+        // console.log(educationData)
       }
     }
     )

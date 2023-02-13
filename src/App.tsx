@@ -24,12 +24,12 @@ export default function App() {
         <div className="w-full min-w-screen min-h-screen p-10 bg-matcha flex flex-col items-center justify-center">
           <Routes>
             <Route path="/" element={<AllTheThings/>}/>
-            <Route path="/form" element={<Textinput id="input1" label="Name" />}/>
-            <Route path="/button" element={<Button color="moss"/>}/>
-            <Route path="/checkbox" element={<Checkbox id="checkbox1" label="thing"/>}/>
-            <Route path="/card" element={<Card children={<div>a card</div>} />}/>
-            <Route path="/modal" element={<Modal visible={true} />}/>
-            <Route path="/tooltip" element={<Tooltip displayText="what is this?" tooltipText="tooltip example revealed!" />}/>
+            <Route path="/components/input" element={<Textinput id="input1" label="Name" />}/>
+            <Route path="/components/button" element={<Button color="moss"/>}/>
+            <Route path="/components/checkbox" element={<Checkbox id="checkbox1" label="thing"/>}/>
+            <Route path="/components/card" element={<Card children={<div>a card</div>} />}/>
+            <Route path="/components/modal" element={<Modal visible={true} />}/>
+            <Route path="/components/tooltip" element={<Tooltip displayText="what is this?" tooltipText="tooltip example revealed!" />}/>
             <Route path="/d3-samples/bar" element={<D3Bar />}/>
             <Route path="/d3-samples/line" element={<D3Line />}/>
             <Route path="/d3-samples/scatterplot" element={<D3Scatter />}/>

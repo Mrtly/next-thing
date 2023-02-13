@@ -9,7 +9,7 @@ export default function SideNav() {
       <ul>
         <li><SideNavLink to="/" displayText="All"/></li>
         <li><SideNavLink to="/components/button" displayText="Button"/></li>
-        <li><SideNavLink to="/components/form" displayText="TextInput"/></li>
+        <li><SideNavLink to="/components/input" displayText="TextInput"/></li>
         <li><SideNavLink to="/components/checkbox" displayText="CheckBox"/></li>
         <li><SideNavLink to="/components/card" displayText="Card"/></li>
         <li><SideNavLink to="/components/modal" displayText="Modal"/></li>
