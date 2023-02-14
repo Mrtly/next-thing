@@ -16,12 +16,13 @@ export default function SideNav() {
         <li><SideNavLink to="/components/tooltip" displayText="Tooltip"/></li>
       </ul>  
       <Divider/>
-      <div className="font-medium text-moss my-4">D3 Samples</div>
+      <div className="font-medium text-moss my-4">Data Viz Samples</div>
       <ul>
-        <li><SideNavLink to="/d3-samples/bar" displayText="Bar"/></li>
-        <li><SideNavLink to="/d3-samples/line" displayText="Line"/></li>
-        <li><SideNavLink to="/d3-samples/scatterplot" displayText="Scatterplot"/></li>
-        <li><SideNavLink to="/d3-samples/map" displayText="Map"/></li>
+        <li><SideNavLink to="/samples/d3-bar" displayText="D3 Bar"/></li>
+        <li><SideNavLink to="/samples/d3-line" displayText="D3 Line"/></li>
+        <li><SideNavLink to="/samples/d3-scatterplot" displayText="D3 Scatterplot"/></li>
+        <li><SideNavLink to="/samples/d3-map" displayText="D3 Map"/></li>
+        <li><SideNavLink to="/samples/leaflet-map" displayText="Leaflet Map"/></li>
       </ul>    
     </nav>
   );

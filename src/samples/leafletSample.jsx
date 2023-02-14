@@ -1,6 +1,7 @@
 import * as L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import { useState, useRef, useEffect } from 'react'
+import issIconUrl from "./iss.png";
 
 export default function LeafletIss() {
   const issApiUrl = 'https://api.wheretheiss.at/v1/satellites/25544';
@@ -31,8 +32,9 @@ export default function LeafletIss() {
       L.tileLayer(tileUrl).addTo(theMap);
       L.tileLayer(stamenWatercolor).addTo(theMap);
       
+      
       const issIcon = new L.Icon({
-        iconUrl: 'src/samples/iss.png',
+        iconUrl: issIconUrl,
         iconSize: [50, 32],
         iconAnchor: [25, 16]
       });
@@ -62,7 +64,7 @@ export default function LeafletIss() {
     <div className="w-full h-full p-10 bg-bark flex flex-col items-center justify-center">
       <div className="mb-5 text-goldleaf text-2xl text-left w-full">
         Where is the ISS ?
-        <div className="text-sm text-white">
+        <div className="text-sm font-thin text-white">
           using Leaflet maps and the <a target="_blank" className="underline" href="https://api.wheretheiss.at">ISS API</a>
         </div>
       </div>
@@ -74,9 +76,13 @@ export default function LeafletIss() {
         <div ref={longRef}>longitude: {latAndLong[1].toFixed(2)}</div>
       </div>
 
-      <div className="mt-10 text-sm text-white">
-      Map tiles by <a target="_blank" className="underline" href="http://stamen.com">Stamen Design</a>,
-      Map data from <a target="_blank" className="underline" href="https://www.openstreetmap.org">OpenStreetMap</a>
+      <div className="mt-10 text-sm font-thin text-white">
+        Map tiles by <a target="_blank" className="underline" href="http://stamen.com">Stamen Design</a> -
+        Map data from <a target="_blank" className="underline" href="https://www.openstreetmap.org">OpenStreetMap</a>
+      </div>
+
+      <div className="mt-10 text-lavender text-sm font-thin italic">
+        if it seems stuck it may have exceeded the free api calls for now - try again later :)
       </div>
     </div>
   );

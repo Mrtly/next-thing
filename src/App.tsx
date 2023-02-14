@@ -31,11 +31,11 @@ export default function App() {
             <Route path="/components/card" element={<Card children={<div>a card</div>} />}/>
             <Route path="/components/modal" element={<Modal visible={true} />}/>
             <Route path="/components/tooltip" element={<Tooltip displayText="what is this?" tooltipText="tooltip example revealed!" />}/>
-            <Route path="/d3-samples/bar" element={<D3Bar />}/>
-            <Route path="/d3-samples/line" element={<D3Line />}/>
-            <Route path="/d3-samples/scatterplot" element={<D3Scatter />}/>
-            <Route path="/d3-samples/map" element={<D3Map />}/>
-            <Route path="/leaflet-sample" element={<LeafletIss />}/>
+            <Route path="/samples/d3-bar" element={<D3Bar />}/>
+            <Route path="/samples/d3-line" element={<D3Line />}/>
+            <Route path="/samples/d3-scatterplot" element={<D3Scatter />}/>
+            <Route path="/samples/d3-map" element={<D3Map />}/>
+            <Route path="/samples/leaflet-map" element={<LeafletIss />}/>
           </Routes>
         </div>
       </div>
