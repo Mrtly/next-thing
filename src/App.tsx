@@ -13,6 +13,7 @@ import D3Scatter from './samples/d3ScatterSample';
 import D3Map from './samples/d3MapSample';
 
 import { Route, Routes } from 'react-router-dom'
+import LeafletIss from './samples/leafletSample';
 
 export default function App() {
   
@@ -34,6 +35,7 @@ export default function App() {
             <Route path="/d3-samples/line" element={<D3Line />}/>
             <Route path="/d3-samples/scatterplot" element={<D3Scatter />}/>
             <Route path="/d3-samples/map" element={<D3Map />}/>
+            <Route path="/leaflet-sample" element={<LeafletIss />}/>
           </Routes>
         </div>
       </div>
