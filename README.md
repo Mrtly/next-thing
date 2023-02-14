@@ -4,8 +4,10 @@ on Vite, with TS & Tailwind
 
 lives on [faff.vercel.app](https://faff.vercel.app/)
 
-Some buttons, inputs, a modal, a tooptip etc, all made in practice of React's good practices according to the new react docs.
+Some React UI components practice (stydying the new React docs!)
 
-Incomplete - and at the moment it looks something like this:
+Also some Data viz demos with D3 and Leaflet.
 
-<img width="600" alt="Screen Shot 2023-02-08 at 4 25 47 PM" src="https://user-images.githubusercontent.com/50080618/217654554-94dd670c-e5cd-492d-86a3-74a80bfae50a.png">
+At the moment it looks something like this:
+
+[<img width="600" alt="Screen Shot 2023-02-14 at 2 36 03 PM" src="https://user-images.githubusercontent.com/50080618/218839375-51640177-264b-435f-bead-1219e6800636.png">](https://faff.vercel.app/)
