@@ -56,7 +56,7 @@ const routes: routerType[] = [
     name: "Tooltip"
   },
   { 
-    path: "samples/d3-ba",
+    path: "samples/d3-bar",
     element: <D3Bar />, 
     name: "D3 Bar"
   },

@@ -5,14 +5,14 @@ import Button from '../components/button';
 
 export default function D3Bar() {
   
-  const h = 200;
-  const w = 500;
-  const padding = 30;
-  const initialData = [35,5,15,60,20,40,10,75,60,32];
-  const randomData = [...Array(10)].map(element=>~~(Math.random()*125)); //
+  const h: number = 200;
+  const w: number = 500;
+  const padding: number = 30;
+  const initialData: number[] = [35,5,15,60,20,40,10,75,60,32];
+  const randomData: number[] = [...Array(10)].map(element=>~~(Math.random()*125)); //
   
-  const [dataSet, setData] = useState(initialData);
-  const svgRef = useRef();
+  const [dataSet, setData] = useState<number[]>(initialData);
+  const svgRef = useRef<SVGSVGElement>(null);
 
   useEffect( () => {
     const maxValue = Math.max(...initialData);
@@ -22,13 +22,15 @@ export default function D3Bar() {
         .attr('height', h);
 
     const xScale = d3.scaleBand()
+      //@ts-ignore
       .domain(dataSet.map((el, index) => index))
       .range([padding, w-padding])
       .padding(0.5); 
 
     const colorScale = d3.scaleLinear()
       .domain([30,~~(highestYValue/2),highestYValue])
-      .range(["green","orange","maroon"]);
+      //@ts-ignore
+      .range(["green", "orange", "maroon"]);
 
     const yScale = d3.scaleLinear()
       .domain([0,highestYValue])
@@ -39,12 +41,14 @@ export default function D3Bar() {
    
     svg.select(".x-axis")
       .style('transform', `translateY(${h-padding}px)`)
+      //@ts-ignore
       .call(xAxis)
       .attr("class", "font-ubuntu text-md text-moss");
 
     const yAxis = d3.axisLeft(yScale);
     svg.select(".y-axis")
       .style('transform', `translateX(${padding}px)`)
+      //@ts-ignore
       .call(yAxis)
       .attr("class", "font-ubuntu text-md text-goldleaf");
 
@@ -53,6 +57,7 @@ export default function D3Bar() {
         .join('rect')
           .attr('class','bar')
           .attr('transform','scale(1, -1)')
+          //@ts-ignore
           .attr('x', (val, index) => xScale(index))
           .attr('y', -h+padding)
           .attr('width', xScale.bandwidth()) 

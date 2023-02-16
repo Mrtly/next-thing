@@ -4,13 +4,13 @@ import Card from '../components/card'
 
 export default function D3Line() {
 
-  const [data, setData] = useState([...Array(10)].map(element=>~~(Math.random()*150)))
-  const svgRef = useRef()
+  const [data] = useState<number[]>([...Array(10)].map(element=>~~(Math.random()*150)))
+  const svgRef = useRef<SVGSVGElement>(null)
   
   useEffect(() => {
     //svg
-    const w = 600
-    const h = 200
+    const w: number  = 600
+    const h: number  = 200
     const svg = d3.select(svgRef.current)
       .attr('width', w)
       .attr('height', h)
@@ -25,15 +25,14 @@ export default function D3Line() {
       .domain([0, h])
       .range([h, 0]);
 
-    const generateScaledLine = d3.line()
+    const generateScaledLine = d3.line<number>()
       .x((d, i) => xScale(i))
       .y(yScale)
       .curve(d3.curveCardinal);
+    
     //axes
     const xAxis = d3.axisBottom(xScale)
-      .ticks(data.length)
-      .tickFormat(i => i + 1);
-
+      .tickValues([...Array(data.length).keys()].map((i) => i + 1));
 
     const yAxis = d3.axisLeft(yScale)
       .ticks(5);
