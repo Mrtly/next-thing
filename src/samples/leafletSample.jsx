@@ -76,12 +76,12 @@ export default function LeafletIss() {
         <div ref={longRef}>longitude: {latAndLong[1].toFixed(2)}</div>
       </div>
 
-      <div className="mt-10 text-sm font-thin text-white">
+      <div className="mt-10 text-sm font-thin text-white tracking-wider">
         Map tiles by <a target="_blank" className="underline" href="http://stamen.com">Stamen Design</a> -
         Map data from <a target="_blank" className="underline" href="https://www.openstreetmap.org">OpenStreetMap</a>
       </div>
 
-      <div className="mt-10 text-lavender text-sm font-thin italic">
+      <div className="mt-6 text-lavender text-sm font-thin tracking-wider italic">
         if it seems stuck it may have exceeded the free api calls for now - try again later :)
       </div>
     </div>

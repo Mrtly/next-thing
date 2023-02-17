@@ -10,7 +10,7 @@ export default function App() {
       <TopNav/>
       <div className="flex font-ubuntu">
         <SideNav/>
-        <div className="w-full min-w-screen min-h-screen p-10 bg-matcha flex flex-col items-center justify-center">
+        <div className="w-full min-w-screen min-h-screen p-10 flex flex-col items-center justify-center">
           <Router/>
         </div>
       </div>

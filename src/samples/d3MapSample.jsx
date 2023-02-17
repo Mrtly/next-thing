@@ -21,6 +21,7 @@ export default function D3Map() {
   svg.attr('height', height)
 
   const tooltip = d3.select(tooltipRef.current)
+    .style('visibility', 'hidden')
 
   const drawMap = () => {
   
@@ -110,7 +111,7 @@ export default function D3Map() {
       <div className="mb-2 ">D3 map with US higher education data</div>
       <div className="text-sm font-thin">shows % of people with a Bachelors or higher education per county</div>
       <svg ref={svgRef}/>
-      <div ref={tooltipRef} className='absolute py-3 px-6 bg-lavender font-medium tracking-wider'/>
+      <div ref={tooltipRef} className='absolute py-3 px-6 bg-white font-medium tracking-wider'/>
       <div className="mt-2 text-sm font-thin">project idea & sample data (<a target='_blank' href={countyDataUrl} className='underline text-moss'>counties</a>, <a target='_blank' href={eduDataUrl} className='underline text-moss'>education</a>) from freeCodeCamp</div>
     </Card>
   );
