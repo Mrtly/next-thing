@@ -11,6 +11,7 @@ import D3Bar from './samples/d3BarSample';
 import D3Line from './samples/d3LineSample';
 import D3Scatter from './samples/d3ScatterSample';
 import D3Map from './samples/d3MapSample';
+import D3Pie from './samples/d3PieSample';
 import LeafletIss from './samples/leafletSample';
 
 interface routerType {
@@ -79,6 +80,11 @@ const routes: routerType[] = [
     path: "samples/leaflet-map", 
     element: <LeafletIss />,
     name: "Leaflet Map"
+  },
+  { 
+    path: "samples/d3-pie", 
+    element: <D3Pie />,
+    name: "D3 Pie"
   }
 ];
 
