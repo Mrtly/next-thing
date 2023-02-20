@@ -23,7 +23,7 @@ export default function Modal(props: ModalProps) {
   return <>{ visible && 
     <div aria-hidden={!visible}
       onClick={closeModal}
-      className="fixed inset-0 bg-opacity-50 z-20 bg-pine w-screen h-screen flex items-center justify-center">
+      className="fixed inset-0 bg-opacity-50 z-20 bg-cloudy w-screen h-screen flex items-center justify-center">
       <div  
         onClick={(e)=>e.stopPropagation()} //don't close if clicking on modal body
         role="dialog"
@@ -33,7 +33,7 @@ export default function Modal(props: ModalProps) {
         {props.children}
         
         <Button 
-          color="moss" 
+          color="berry" 
           displayText={'close'} 
           onClick={closeModal}
           className="absolute bottom-2 right-2"/>

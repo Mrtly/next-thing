@@ -17,7 +17,7 @@ export default function Tooltip(props: TooltipProps) {
     <div className="relative">
       <div 
        className={[
-        "absolute -top-16 p-4 bg-wine text-white rounded shadow min-w-max",
+        "absolute -top-16 p-4 bg-berry text-white rounded shadow min-w-max",
         "transition-all duration-300",
         show ? "opacity-100" : "opacity-0"
       ].join(" ")

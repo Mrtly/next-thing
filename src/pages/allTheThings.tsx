@@ -21,7 +21,7 @@ export default function AllTheThings() {
     <div className="mt-5">
       button component with color prop
       <div className="mt-5 flex flex-wrap lg:flex-nowrap gap-2 lg:gap-4 items-center">
-      {['wine', 'moss', 'pine', 'bark', 'lavender', 'goldleaf'].map((item,index)=>{
+      {['berry', 'storm', 'cloudy','sea', 'sky', 'lavender'].map((item,index)=>{
         return <Button key={index} color={item} className=""/>
       })}
     </div>

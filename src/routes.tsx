@@ -33,7 +33,7 @@ const routes: routerType[] = [
   },
   { 
     path: "components/button", 
-    element:<Button color="moss"/>,
+    element:<Button color="berry"/>,
     name: "Button"
   },
   { 

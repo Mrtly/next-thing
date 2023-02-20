@@ -30,7 +30,7 @@ export default function D3Bar() {
     const colorScale = d3.scaleLinear()
       .domain([30,~~(highestYValue/2),highestYValue])
       //@ts-ignore
-      .range(["green", "orange", "maroon"]);
+      .range(["#8A76A6", "#5FA8BA", "#6A9CB5", "#748FB0", "#7F83AB"]);
 
     const yScale = d3.scaleLinear()
       .domain([0,highestYValue])
@@ -43,14 +43,14 @@ export default function D3Bar() {
       .style('transform', `translateY(${h-padding}px)`)
       //@ts-ignore
       .call(xAxis)
-      .attr("class", "font-ubuntu text-md text-moss");
+      .attr("class", "font-ubuntu text-md text-cloudy");
 
     const yAxis = d3.axisLeft(yScale);
     svg.select(".y-axis")
       .style('transform', `translateX(${padding}px)`)
       //@ts-ignore
       .call(yAxis)
-      .attr("class", "font-ubuntu text-md text-goldleaf");
+      .attr("class", "font-ubuntu text-md text-berry");
 
     svg.selectAll(".bar")
       .data(dataSet)
@@ -77,9 +77,9 @@ export default function D3Bar() {
         </svg>
         <br/>
         <div className="flex items-center justify-around">
-            <Button small color="pine" onClick={ () => setData(dataSet.map( value => value+ 5))}> Increase </Button>
+            <Button small color="sea" onClick={ () => setData(dataSet.map( value => value+ 5))}> Increase </Button>
             <Button small onClick={() => setData(randomData)}> Random </Button>
-            <Button small color="wine" onClick={() => setData(initialData.map(value => value ))}> Reset </Button>
+            <Button small color="sky" onClick={() => setData(initialData.map(value => value ))}> Reset </Button>
         </div>
       </div>
     </Card>

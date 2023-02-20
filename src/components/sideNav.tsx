@@ -5,7 +5,7 @@ export default function SideNav() {
   
   return (
     <nav className="shadow-md bg-water border-r border-slate-300 px-4 lg:px-6 text-lg">
-      <div className="font-medium text-moss my-4">Components</div>
+      <div className="font-medium text-cloudy my-4">Components</div>
       <ul>
         <li><SideNavLink to="/" displayText="All"/></li>
         <li><SideNavLink to="/components/button" displayText="Button"/></li>
@@ -16,7 +16,7 @@ export default function SideNav() {
         <li><SideNavLink to="/components/tooltip" displayText="Tooltip"/></li>
       </ul>  
       <Divider/>
-      <div className="font-medium text-wine my-4 whitespace-nowrap">Data Viz Samples</div>
+      <div className="font-medium text-berry my-4 whitespace-nowrap">Data Viz Samples</div>
       <ul>
         <li><SideNavLink to="/samples/leaflet-map" displayText="Leaflet Map"/></li>
         <li><SideNavLink to="/samples/d3-pie" displayText="D3 Pies"/></li>
