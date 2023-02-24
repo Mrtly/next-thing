@@ -1,28 +1,15 @@
-import { useState } from 'react';
 import Button from './button'
-
-type ModalProps = {
-  visible: boolean,
-  children: string | JSX.Element | JSX.Element[] 
+interface ModalType {
+  children?: string | JSX.Element | JSX.Element[],
+  isOpen: boolean;
+  toggle: () => void;
 }
-const defaultProps = {
-  visible: true,
-  children: 'the modal is visible'
-};
 
-Modal.defaultProps = defaultProps;
+export default function Modal(props: ModalType) {
 
-export default function Modal(props: ModalProps) {
-
-  const [visible, setVisible] = useState(props.visible)
-  
-  const closeModal = () => {
-    setVisible(false)
-  }
- 
-  return <>{ visible && 
-    <div aria-hidden={!visible}
-      onClick={closeModal}
+  return <> { props.isOpen && 
+    <div aria-hidden={!props.isOpen}
+      onClick={props.toggle}
       className="fixed inset-0 bg-opacity-50 z-20 bg-cloudy w-screen h-screen flex items-center justify-center">
       <div  
         onClick={(e)=>e.stopPropagation()} //don't close if clicking on modal body
@@ -35,7 +22,7 @@ export default function Modal(props: ModalProps) {
         <Button 
           color="berry" 
           displayText={'close'} 
-          onClick={closeModal}
+          onClick={props.toggle}
           className="absolute bottom-2 right-2"/>
       </div>
     </div> }
