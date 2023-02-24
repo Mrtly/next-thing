@@ -1,13 +1,13 @@
-### a React Playground
+### a React & Data Viz Playground
 
-on Vite, with TS & Tailwind 
+on Vite, with TS, Tailwind, D3, Leaflet
 
 lives on [faff.vercel.app](https://faff.vercel.app/)
 
-Some React UI components practice (stydying the new React docs!)
+- some React UI components practice (stydying the new React docs!)
 
-Also some Data viz demos with D3 and Leaflet.
+- and some Data viz demos with D3 and Leaflet
 
-At the moment it looks something like this:
+It looks something like this:
 
-[<img width="600" alt="Screen Shot 2023-02-14 at 2 36 03 PM" src="https://user-images.githubusercontent.com/50080618/218839375-51640177-264b-435f-bead-1219e6800636.png">](https://faff.vercel.app/)
+[<img width="500" alt="Screen Shot 2023-02-24 at 2 16 10 PM" src="https://user-images.githubusercontent.com/50080618/221271608-7b79e357-44c1-42f6-aaab-6ee4cdbd1854.png">](https://faff.vercel.app/) [<img width="500" alt="Screen Shot 2023-02-24 at 2 16 15 PM" src="https://user-images.githubusercontent.com/50080618/221271606-4f33c0ae-52b7-400e-8b15-732db9be1a4d.png">](https://faff.vercel.app/)

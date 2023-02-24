@@ -11,7 +11,7 @@ export default function Button(props: ButtonProps) {
   return <button
     onClick={props.onClick}
     className={[`flex items-center justify-center rounded-full 
-      text-slate-100 shadow hover:shadow-lg bg-${props.color||'berry'}
+      text-white tracking-wider shadow hover:shadow-lg bg-${props.color||'berry'}
       active:bg-slate-700 active:scale-[.95] transition-all duration-150 ${props.className}`,
         props.small? 'py-1 px-3 text-sm' : 'py-2 px-6 min-w-[80px]'].join(' ')}>
       {props.children || props.displayText || props.color}

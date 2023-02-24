@@ -1,11 +1,5 @@
 import { Route, Routes } from 'react-router-dom'
 
-import Textinput from './components/textinput';
-import Button from './components/button'
-import Checkbox from './components/checkbox'
-import Card from './components/card'
-import Modal from './components/modal';
-import Tooltip from './components/tooltip';
 import AllTheThings from './pages/allTheThings';
 import D3Bar from './samples/d3BarSample';
 import D3Line from './samples/d3LineSample';
@@ -25,36 +19,6 @@ const routes: routerType[] = [
     path: "",
     element: <AllTheThings />,
     name: "All The Things"
-  },
-  { 
-    path: "components/input", 
-    element: <Textinput id="input1" label="Name" />,
-    name: "Text Input"
-  },
-  { 
-    path: "components/button", 
-    element:<Button color="berry"/>,
-    name: "Button"
-  },
-  { 
-    path: "/components/checkbox", 
-    element: <Checkbox id="checkbox1" label="thing"/>,
-    name: "Checkbox"
-  },
-  { 
-    path: "components/card", 
-    element: <Card children={<div>a card</div>} />,
-    name: "Card"
-  },
-  { 
-    path: "components/modal", 
-    element: <Modal visible={true} />,
-    name: "Modal"
-  },
-  { 
-    path: "components/tooltip", 
-    element: <Tooltip displayText="what is this?" tooltipText="tooltip example revealed!" />,
-    name: "Tooltip"
   },
   { 
     path: "samples/d3-bar",
