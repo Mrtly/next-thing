@@ -5,6 +5,7 @@ import Button from '../components/button'
 import Checkbox from '../components/checkbox'
 import Tooltip from '../components/tooltip'
 import Card from '../components/card'
+import Spinner from '../components/spinner'
 
 export default function AllTheThings() {
 
@@ -26,6 +27,10 @@ export default function AllTheThings() {
       })}
     </div>
 
+    <Divider/>
+    spinner/loading component
+    <Spinner />
+  
     <Divider/>
     text input component
     <Textinput id="input1" label="Name" onValueChange={(e) => console.log(e)}/>
