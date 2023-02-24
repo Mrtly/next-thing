@@ -31,20 +31,27 @@ export default function D3PieSample() {
     const arc: any | d3.DefaultArcObject = d3.arc()
           .innerRadius(innerRadius)
           .outerRadius(outerRadius)
-    // draw arc paths
-    arcs.append("path")
-      .attr("d", arc)
     // colors
     const color = d3.scaleLinear()
       .domain([0, 5])
       //@ts-ignore
       .range(["#8A76A6", "#54B5BF", "#8EA65B", "#F27B35", "#BF4539"]);
-
+    // draw arc paths
     arcs.append("path")
+      .transition()
+      .delay(100) 
+      .duration(1000) 
       .attr("d", arc)
       .attr('stroke', 'white')
       .attr('stroke-width', 1)
-      .attr("fill", function(d, i) { return color(i) }) 
+      .attr("fill", function(d, i) { return color(i) })
+      .attrTween('d', function(d) {
+        let i = d3.interpolate(d.startAngle+0.1, d.endAngle);
+        return function(t) {
+          d.endAngle = i(t); 
+          return arc(d)
+        }
+      }); 
     // labels
     arcs.append("text")
     .attr("transform", function(d) {
@@ -53,6 +60,8 @@ export default function D3PieSample() {
     .attr("text-anchor", "end")
     .attr("class", "font-semibold text-lg")
     .attr("fill", 'white')
+    .transition()
+	  .delay(1000)
     .text(function(d) {return d.value})
   }
 
