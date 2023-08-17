@@ -62,7 +62,7 @@ export default function LeafletIss() {
 
   return (
     <div className="w-full h-full p-10 bg-bark flex flex-col items-center justify-center">
-      <div className="mb-5 text-sky text-3xl text-left w-full">
+      <div className="mb-5 text-leaf text-3xl text-left w-full">
         Where is the ISS ?
         <div className="text-sm font-thin text-white">
           using Leaflet maps and the <a target="_blank" className="underline" href="https://api.wheretheiss.at">ISS API</a>

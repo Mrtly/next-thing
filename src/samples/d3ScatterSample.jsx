@@ -63,7 +63,7 @@ export default function D3Scatter() {
       .attr('data-yvalue', (item) => { return new Date(item['Seconds'] * 1000) } )
       .attr('cx', (item) => { return xScale(item['Year']) })
       .attr('cy', (item) => { return yScale(new Date(item['Seconds']*1000)) })
-      .attr('class', (item) => { return item['Doping'] !== '' ? 'fill-berry hover:fill-sea' : 'fill-gold hover:fill-sea' })
+      .attr('class', (item) => { return item['Doping'] !== '' ? 'fill-wood hover:fill-apple' : 'fill-gold hover:fill-apple' })
       .on('mouseover', (x, item) => { 
         let name = `${item['Name']} - ${item['Time']} in ${item['Year']}`
         let dope = item['Doping'] === '' ? 'No Allegations' : `${item['Doping']}`
@@ -89,12 +89,12 @@ export default function D3Scatter() {
       <div className="px-8 py-4 flex flex-col">
         <div className="">D3 scatterplot with competitive cyclist data</div>
         <Card id="legend" className="mt-2 p-2 text-sm font-thin self-end">
-          <span className='text-berry'>Purple = Doping Allegation </span> | <span className='text-gold'>Gold = No Doping Allegation</span>
+          <span className='text-wood'>Purple = Doping Allegation </span> | <span className='text-gold'>Gold = No Doping Allegation</span>
         </Card>
         <svg ref={svgRef}/>
-        <div ref={tooltipRef} className='h-14 py-2 px-4 bg-sea bg-opacity-25 text-sm'/>
+        <div ref={tooltipRef} className='h-14 py-2 px-4 bg-ground bg-opacity-25 text-sm'/>
       </div>
-        <div className="text-sm font-thin">project idea & <a target='_blank' href={source} className='underline text-cloudy'>sample data</a> from freeCodeCamp</div>
+        <div className="text-sm font-thin">project idea & <a target='_blank' href={source} className='underline text-maple'>sample data</a> from freeCodeCamp</div>
     </Card>
   );
 }

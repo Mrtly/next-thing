@@ -9,7 +9,7 @@ export default function TopNav() {
         <div className="flex items-center">
           <Logo /> 
           <span className='font-ubuntu font-semibold text-2xl ml-3'>Playground</span> 
-          <span className='ml-4 tracking-wide text-md text-sea'>a collection of components & data visualization samples</span>
+          <span className='ml-4 tracking-wider text-sm text-white'>a collection of components & data visualization samples</span>
         </div>
       </NavLink>
     </div>

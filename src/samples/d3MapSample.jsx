@@ -112,7 +112,7 @@ export default function D3Map() {
       <div className="text-sm font-thin">shows % of people with a Bachelors or higher education per county</div>
       <svg ref={svgRef}/>
       <div ref={tooltipRef} className='absolute py-3 px-6 bg-white font-medium tracking-wider'/>
-      <div className="mt-2 text-sm font-thin">project idea & sample data (<a target='_blank' href={countyDataUrl} className='underline text-cloudy'>counties</a>, <a target='_blank' href={eduDataUrl} className='underline text-cloudy'>education</a>) from freeCodeCamp</div>
+      <div className="mt-2 text-sm font-thin">project idea & sample data (<a target='_blank' href={countyDataUrl} className='underline text-maple'>counties</a>, <a target='_blank' href={eduDataUrl} className='underline text-maple'>education</a>) from freeCodeCamp</div>
     </Card>
   );
 }

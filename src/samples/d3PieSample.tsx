@@ -35,7 +35,7 @@ export default function D3PieSample() {
     const color = d3.scaleLinear()
       .domain([0, 5])
       //@ts-ignore
-      .range(["#8A76A6", "#54B5BF", "#8EA65B", "#F27B35", "#BF4539"]);
+      .range(['#81171b', '#D2A04A', '#ad2e24', '#c75146', '#ce796b']);
     // draw arc paths
     arcs.append("path")
       .transition()

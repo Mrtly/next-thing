@@ -14,7 +14,7 @@ export default function D3Line() {
     const svg = d3.select(svgRef.current)
       .attr('width', w)
       .attr('height', h)
-      .attr('class', 'bg-sky bg-opacity-25 overflow-visible');
+      .attr('class', 'bg-ground bg-opacity-25 overflow-visible');
 
     //scaling
     const xScale = d3.scaleLinear()

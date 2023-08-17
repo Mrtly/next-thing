@@ -5,9 +5,9 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   safelist: [
-    'bg-berry', 'bg-sea', 'bg-lavender',
-    'bg-sky', 'bg-water', 'bg-cloudy',
-    'bg-storm', 'bg-gold', 'bg-pine', 'bg-moss'
+    'bg-wood', 'bg-apple', 'bg-lavender', 'bg-walnut',
+    'bg-leaf', 'bg-water', 'bg-maple',
+    'bg-bark', 'bg-gold', 'bg-pine', 'bg-moss'
   ],
   theme: {
     extend: {
@@ -16,14 +16,14 @@ module.exports = {
       },
       colors: {
         bark: '#1C1E1D',
+        walnut: '#540804',
+        wood: '#81171b',
+        maple: '#ad2e24',
+        apple: '#c75146',
+        leaf: '#ce796b',
         gold: '#D2A04A',
-        lavender: '#96B2E1',
-        water: '#f0f0fc',
-        berry: '#8a76a6',
-        sky: '#5FA8BA',
-        sea: '#6A9CB5',
-        cloudy: '#748FB0',
-        storm: '#7F83AB'
+        ground: '#EFEBE7',
+        lavender: '#96B2E1'
       },
       keyframes: {
         wiggle: {
