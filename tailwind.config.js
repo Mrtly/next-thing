@@ -1,0 +1,39 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+
+  ],
+  safelist: [
+    'bg-water', 'bg-bark','bg-yin', 'bg-violet', 'bg-rose', 'bg-coral', 'bg-buff'
+  ],
+  theme: {
+    extend: {
+      fontFamily: {
+        ubuntu: ['Ubuntu', 'sans-serif']
+      },
+      colors: {
+        bark: '#1C1E1D',
+        gold: '#D2A04A',
+        lavender: '#96B2E1',
+        yin: '#355070',
+        violet: '#6d597a',
+        rose: '#b56576',
+        coral: '#e56b6f',
+        buff: '#eaac8b',
+
+      },
+      keyframes: {
+        wiggle: {
+          '0%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(360deg)' },
+        }
+      },
+      animation: {
+        'wiggle': 'spin 10s linear infinite',
+      }
+    },
+  },
+  plugins: [],
+}
