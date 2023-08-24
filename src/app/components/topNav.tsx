@@ -13,7 +13,7 @@ export default function TopNav() {
         <div className="w-screen flex items-center justify-between">
           <div>
             <span className="font-ubuntu font-semibold text-2xl hover:text-rose transition-all duration-100"><Link href="/">Next Adventures</Link></span> 
-            <span className="ml-4 tracking-wider text-sm text-white">a collection of components & data viz samples in React & Next</span>
+            <span className="ml-4 tracking-wider text-sm text-white">a collection of components & data viz samples with React & Next</span>
       
           </div>
           <div className="hidden lg:flex items-center">

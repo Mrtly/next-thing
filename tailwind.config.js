@@ -6,7 +6,7 @@ module.exports = {
 
   ],
   safelist: [
-    'bg-water', 'bg-bark','bg-yin', 'bg-violet', 'bg-rose', 'bg-coral', 'bg-buff'
+    'bg-water', 'bg-bark','bg-yin', 'bg-violet', 'bg-rose', 'bg-coral', 'bg-vinegar'
   ],
   theme: {
     extend: {
@@ -21,7 +21,7 @@ module.exports = {
         violet: '#6d597a',
         rose: '#b56576',
         coral: '#e56b6f',
-        buff: '#eaac8b',
+        vinegar: '#dda15e',
 
       },
       keyframes: {
