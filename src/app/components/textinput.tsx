@@ -7,7 +7,7 @@ function Textinput(props: {
   id: string;
   label: string;
   onValueChange?: (newValue: string) => void; }) {
-    const [name, setName] = useState('Mrtl');
+    const [name, setName] = useState('');
   
     function handleChange(event: ChangeEvent<HTMLInputElement>) {
       setName(event.target.value)
@@ -27,7 +27,6 @@ function Textinput(props: {
             onChange={handleChange}
           />
         </label>
-        <div className="mt-2 h-6 text-sm text-slate-400">value: {name}</div>
       </div>
     );
   }

@@ -34,7 +34,7 @@ export default function D3Line() {
     
     //axes
     const xAxis = d3.axisBottom(xScale)
-      .tickValues([...Array(data.length).keys()].map((i) => i + 1));
+      .tickValues([...Array(data.length).keys()].map((i) => i ));
 
     const yAxis = d3.axisLeft(yScale)
       .ticks(5);

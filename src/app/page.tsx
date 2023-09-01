@@ -1,5 +1,7 @@
 "use client"
 
+import { useState } from 'react';
+
 import Divider from './components/divider';
 import Textinput from './components/textinput';
 import Button from './components/button'
@@ -13,6 +15,15 @@ import useModal from "./hooks/useModal";
 export default function AllTheThings() {
 
   const { isOpen, toggle } = useModal();
+  const [textInputValue, setTextInputValue] = useState('');
+  const [checkboxValue, setCheckboxValue] = useState(false);
+  
+  const updateTextValue = (value: string) => {
+    setTextInputValue(value);
+  }
+  const updateCheckValue = (value: boolean) => {
+    setCheckboxValue(value);
+  }
 
   return <div>
     <h1 className="text-bark">
@@ -46,11 +57,13 @@ export default function AllTheThings() {
 
     <Divider/>
     <div className="text-yin font-thin mb-4">text input component</div>
-    <Textinput id="input1" label="Name" />
+    <Textinput id="input1" label="Name" onValueChange={updateTextValue} />
+    <div className="mt-2 h-6 text-sm text-slate-400">value: {textInputValue}</div>
   
     <Divider/>
     <div className="text-yin font-thin mb-4">checkbox component</div>
-    <Checkbox id="cb1" label="thing" />
+    <Checkbox id="cb1" label="thing" onValueChange={updateCheckValue}/>
+    <div className="mt-2 h-6 text-sm text-slate-400">value: {checkboxValue.toString()}</div>
 
     <Divider/>
     </div>

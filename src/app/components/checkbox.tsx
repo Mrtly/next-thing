@@ -10,9 +10,9 @@ function Checkbox(props: {
   onValueChange?: (newType: boolean) => void; }) {
     const [isChecked, setIsChecked] = useState(props.value || false);
   
-    function handleChange(event: ChangeEvent<HTMLInputElement>) {
+    function handleChange() {
       setIsChecked(!isChecked)
-      props.onValueChange?.(isChecked)
+      props.onValueChange?.(!isChecked)
     }
     
     return (
