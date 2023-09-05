@@ -87,20 +87,17 @@ export default function D3Bar() {
             color="violet"
             onClick={() => setData(dataSet.map((value) => value + 5))}
           >
-            {" "}
-            Increase{" "}
+            Increase
           </Button>
           <Button small onClick={() => setData(randomData)}>
-            {" "}
-            Random{" "}
+            Random
           </Button>
           <Button
             small
-            color="leaf"
+            color="rose"
             onClick={() => setData(initialData.map((value) => value))}
           >
-            {" "}
-            Reset{" "}
+            Reset
           </Button>
         </div>
       </div>
