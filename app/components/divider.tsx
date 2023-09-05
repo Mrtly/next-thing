@@ -1,4 +1,3 @@
 export default function Divider() {
-  
-  return <div className="h-1 my-6 border-b border-slate-300"/>
+  return <div className="my-6 h-1 border-b border-slate-300" />;
 }

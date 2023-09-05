@@ -1,10 +1,9 @@
-
 export default function Spinner() {
-  
-  return <div>
-    <div className="m-2 p-1 w-8 h-8 bg-gradient-to-r from-yin via-violet to-coral rounded-full animate-spin">
-      <div className="w-6 h-6 bg-white rounded-full"/>
+  return (
+    <div>
+      <div className="m-2 h-8 w-8 animate-spin rounded-full bg-gradient-to-r from-yin via-violet to-coral p-1">
+        <div className="h-6 w-6 rounded-full bg-white" />
+      </div>
     </div>
-  </div>
+  );
 }
-

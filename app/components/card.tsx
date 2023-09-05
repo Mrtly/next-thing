@@ -1,12 +1,13 @@
 type CardProps = {
-  children: string | JSX.Element | JSX.Element[],
-  className?: string
-}
+  children: string | JSX.Element | JSX.Element[];
+  className?: string;
+};
 
 export default function Card(props: CardProps) {
-  
   return (
-    <div className={`rounded max-w-max shadow-md p-6 bg-slate-50 ${props.className}`}>
+    <div
+      className={`max-w-max rounded bg-slate-50 p-6 shadow-md ${props.className}`}
+    >
       {props.children}
     </div>
   );
