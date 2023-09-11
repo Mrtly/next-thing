@@ -25,13 +25,13 @@ export default function AllTheThings() {
   };
 
   return (
-    <div>
+    <div className="w-full px-10">
       <div className="mt-5">
         <div className="mb-4 font-thin text-yin">
           button component with color prop
         </div>
         <div className="mt-5 flex flex-wrap items-center gap-2 lg:flex-nowrap lg:gap-4">
-          {["yin", "violet", "rose", "coral", "vinegar"].map((item, index) => {
+          {["yin", "violet"].map((item, index) => {
             return <Button key={index} color={item} className="" />;
           })}
         </div>
@@ -58,7 +58,7 @@ export default function AllTheThings() {
         <Divider />
         <div className="mb-4 font-thin text-yin">modal component</div>
         <Button
-          color="rose"
+          color="violet"
           displayText="show modal"
           className="mt-2"
           onClick={toggle}
